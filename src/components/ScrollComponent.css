@@ -1,0 +1,51 @@
+/* ScrollComponent.css */
+.scroll-container {
+    max-height: 700px; /* Altura máxima do componente */
+    overflow-y: auto; /* Adicione uma barra de rolagem vertical quando necessário */
+    border: 1px solid #ccc; /* Adicione uma borda ao redor do componente */
+    padding: 10px; /* Espaçamento interno */
+    background-color: #a6bad3; /* Cor de fundo */
+  }
+  
+  .scroll-container::-webkit-scrollbar {
+    width: 8px; /* Largura da barra de rolagem */
+  }
+  
+  .scroll-container::-webkit-scrollbar-thumb {
+    background-color: #888; /* Cor do polegar da barra de rolagem */
+    border-radius: 4px; /* Borda arredondada */
+  }
+  
+  .scroll-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Cor do polegar da barra de rolagem ao passar o mouse */
+  }
+/* ScrollComponent.css */
+/* ... (outros estilos) */
+
+/* Estilos para a lista de presentes */
+.gift-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Estilos para cada item da lista de presentes */
+  .gift-item {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para o nome do presente */
+  .gift-name {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  /* Estilos para a descrição do presente */
+  .gift-description {
+    font-size: 14px;
+    color: #666;
+  }
+    

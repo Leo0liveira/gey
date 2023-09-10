@@ -1,0 +1,73 @@
+/* src/global.css */
+:root {
+    --main-bg-color: #edf4fb; /* Cor de fundo principal */
+    --font-size-normal: 24px; /* Tamanho de fonte normal */
+    --spacing-unit: 8px; /* Unidade de espaçamento global */
+    /* Outras variáveis globais */
+  }
+  
+  body {
+    font-family: Arial, sans-serif; /* Define a família de fontes para o corpo do site */
+    font-size: var(--font-size-normal); /* Usa a variável global de tamanho de fonte */
+    background-color: var(--main-bg-color); /* Usa a variável global de cor de fundo */
+    /* Outros estilos globais para o corpo do site */
+  }
+  
+  /* Estilos para a navegação */
+  .navigation {
+    background: linear-gradient(90deg, #99b7d3, #a6bad3); ; /* Cor de fundo para o menu de navegação */
+    color: #fff; /* Cor do texto do menu de navegação */
+    padding: 10px; /* Espaçamento interno do menu de navegação */
+  }
+  
+  .navigation ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Alinhar links à direita */
+  }
+  
+  .navigation li {
+    margin-right: var(--spacing-unit); /* Espaçamento entre os itens do menu de navegação usando a variável global */
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+  }
+  
+  .navigation a:hover {
+    background-color: #99c9f7;
+    border-radius: 8px;
+  }
+  
+  /* Estilos para a página */
+  .page {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .image-container {
+    flex: 1;
+    max-width: 100%; /* Largura máxima de 50% do espaço disponível */
+    max-height: 100%; /* Altura máxima igual à altura do container pai */
+     /* Aplica a animação */
+  }
+  
+  .content-container {
+    flex: 1;
+    padding: var(--spacing-unit); /* Espaçamento interno usando a variável global */
+    /* Outros estilos para o conteúdo */
+  }
+  
+  @keyframes slide-in {
+    from {
+      transform: translateX(-100%); /* Deslocamento inicial da esquerda */
+    }
+    to {
+      transform: translateX(0); /* Posição final (sem deslocamento) */
+    }
+  }
